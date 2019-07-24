@@ -1,0 +1,17 @@
+(define (abs-cond x)
+    (cond ((< x 0) (- x))
+    ((> x 0) x)
+    ((= x 0) 0)
+))
+
+(define (abs-else x)
+    (cond ((< x 0) (- x))
+        (else x)
+    )
+)
+
+(define (abs-if x)
+    (if (< x 0)
+    (- x)
+    x)
+)
