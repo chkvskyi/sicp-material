@@ -1,0 +1,8 @@
+(define (max-sqr-sum a b c)
+    (cond ((and (> a b) (> c b)) (sqr-sum a c))
+        ((and (> a c) (> b c)) (sqr-sum a b))
+        ((and (> b a) (> c a)) (sqr-sum b c))
+    )
+)
+(define (sqr x) (* x x))
+(define (sqr-sum x y) (+ (sqr x) (sqr y)))
